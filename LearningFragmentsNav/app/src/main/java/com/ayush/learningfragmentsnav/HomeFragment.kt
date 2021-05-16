@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 
@@ -22,12 +21,22 @@ class HomeFragment : Fragment() {
        val binding: FragmentHomeBinding = DataBindingUtil.inflate(
                inflater, R.layout.fragment_home,container,false
        )
+
+
         binding.button.setOnClickListener { view:View->
             //binding.text.text="Button Pressed!"
             //Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_secondFragment)
             //navigation- jeetpacktx function below
+
+
+            //use thisw when you just have to switch fragments
             view.findNavController().navigate(R.id.action_homeFragment_to_secondFragment)
+
+
+            //use this when have to pass arguments as well using safe args (pass arguments in action()
+           // view.findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToSecondFragment(input.toString()))
         }
+
         //set value of menu as true
         setHasOptionsMenu(true)
 

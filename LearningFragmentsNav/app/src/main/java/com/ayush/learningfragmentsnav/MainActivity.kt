@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         //we using our navigation graph here as fragment with Home as starting point
-        //adding navigation stuff
+
+        //adding navigation controller for up button
         val navController= this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this,navController)
     }

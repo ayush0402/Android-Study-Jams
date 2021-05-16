@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-
+    <!--adding navGraph to the fragment. NavGraph already has MainFragment as start-->
     <fragment
 
         android:layout_width="match_parent"
