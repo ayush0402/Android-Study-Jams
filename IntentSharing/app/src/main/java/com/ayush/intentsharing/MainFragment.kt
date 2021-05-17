@@ -31,9 +31,10 @@ class MainFragment : Fragment() {
         setHasOptionsMenu(true)
 
 
-
+    //returning fragment to activity
         return binding.root
     }
+
     //inflating menu on mainFragment
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
