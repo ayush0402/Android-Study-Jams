@@ -32,6 +32,7 @@ import com.example.android.guesstheword.databinding.ScoreFragmentBinding
  */
 class ScoreFragment : Fragment() {
 
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
